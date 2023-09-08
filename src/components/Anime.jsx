@@ -78,7 +78,7 @@ const Anime = () => {
         slideIndex = 1;
       }
   
-      const slideWidth = slides[0].clientWidth + 10; // Include margin
+      const slideWidth = slides[0].clientWidth + 10; 
   
       carousel.style.transition = 'transform 0.5s ease-in-out';
       carousel.style.transform = `translateX(-${(slideIndex - 1) * slideWidth}px)`;
@@ -92,7 +92,7 @@ const Anime = () => {
           carousel.style.transition = 'transform 0.5s ease-in-out';
           showSlides();
         }, 100);
-      }, 3000); // Change slide every 3 seconds
+      }, 3000); 
     };
   
     showSlides();
