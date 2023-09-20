@@ -59,7 +59,7 @@ const Anime = () => {
   }, [id]);
 
   useEffect(() => {
-    let slideIndex = 0;
+    let slideIndex = 0; 
     let interval;
     const carousel = document.querySelector('.carousel');
   
@@ -122,7 +122,7 @@ const Anime = () => {
   };
 
   return (
-    <>
+    <div className="Anime-page" >
         <button className="back-button" onClick={navigateHome}>Back</button>
         <span className="anime-title" >{animeDetails.title}</span>
         <div className="basicInfo">
@@ -243,7 +243,7 @@ const Anime = () => {
 
 
         </div>
-    </>
+    </div>
   );
 };
 

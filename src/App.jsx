@@ -1,16 +1,18 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import HomePage from "./components/HomePage";
+import AnimeListPage from "./components/AnimeListPage";
 import Anime from "./components/Anime";
-import Footer from "./components/Footer";
 
 const App = () => {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/anime/:id"  element={<Anime/>}/>
+        <Route path="/popular" element={<AnimeListPage state="bypopularity" category="Popular" />} />
+        <Route path="/airing" element={<AnimeListPage state="airing" category="Airing" />} />
+        <Route path="/upcoming" element={<AnimeListPage state="upcoming" category="Upcoming" />} />
+        <Route path="/anime/:id" element={<Anime />} />
       </Routes>
-      <Footer/>
     </Router>
   );
 };
