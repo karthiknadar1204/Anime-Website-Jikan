@@ -9,7 +9,7 @@ const HomePage = () => {
 
   useEffect(() => {
     const element = leftImageRef.current;
- 
+
     if (element) {
       VanillaTilt.init(element);
       element.addEventListener("tiltChange", callback);
@@ -36,9 +36,7 @@ const HomePage = () => {
 
       <div className="hero-texts">
         <span className="hero-title">
-          Watch your<br />
-          favorite<br />
-          anime here
+          Watch all your favorite <br /> anime at one place
         </span>
       </div>
 
@@ -55,7 +53,7 @@ const HomePage = () => {
           </Link>
         </div>
         <div className="left-image">
-          <img src={img} alt="" ref={leftImageRef} />
+          <img src={img} alt="" ref={leftImageRef} className="imageee" />
         </div>
       </div>
     </div>
