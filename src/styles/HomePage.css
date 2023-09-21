@@ -134,13 +134,14 @@ h1 {
 .left-image {
   /* margin-bottom: 50rem; */
   position: absolute;
-  top: 20%;
-  right: 0%;
+  top: 15%;
+  right: 5%;
   /* transform: translateY(-20%); */
   height: 100%;
   width: 50%;
   /* height: 10%; */
   overflow: hidden;
+  object-fit: contain;
   /* background-color: #ffb703; */
 }
 
