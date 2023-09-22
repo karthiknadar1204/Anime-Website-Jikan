@@ -5,6 +5,19 @@ body {
   background-color: #000;
 }
 
+button {
+  background-color: #000 !important;
+  max-width: fit-content;
+  max-height: fit-content;
+  padding: 0;
+}
+.nav-menu {
+  display: none;
+  background-color: #000;
+  height: 2rem;
+  /* display: none; */
+}
+
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -258,8 +271,54 @@ h1 {
   }
 
   /* Hide the navigation links on larger screens */
+
+  .nav-menu {
+    display: inline-block;
+    position: absolute;
+    top: 10%;
+    right: 10%;
+  }
+
+  .nav-menu:active {
+    opacity: 50%;
+  }
+
+  .logo-anime {
+    position: absolute;
+    top: 7%;
+    margin-bottom: 10vh;
+    animation: 5s infinite alternate slidein;
+  }
+
+  .category {
+    margin: 15vh 10% 10vh 10%;
+
+    padding: auto;
+  }
+
   .category-links {
+    display: none;
+  }
+
+  .phone-onn {
+    margin-top: 20vh;
+    display: flex;
     flex-direction: column;
+    margin-right: 5vw;
+    animation: fadeInDown; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 0.1s; /* don't forget to set a duration! */
+  }
+
+  .phone-onn:hover {
+  }
+
+  @keyframes slidein {
+    from {
+      transform: translateX(-10%);
+    }
+    to {
+      transform: translateX(20%);
+    }
   }
 
   /* Add styles for the "FaBars" icon button */
