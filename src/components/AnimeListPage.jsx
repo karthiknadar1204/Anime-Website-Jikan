@@ -3,6 +3,7 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 import "../styles/HomePage.css";
 import { FaBars, FaTimes } from "react-icons/fa";
+import navIc from "./navigation-bar.png";
 
 const AnimeListPage = ({ state, category }) => {
   const [popular, setPopular] = useState([]);
@@ -45,10 +46,13 @@ const AnimeListPage = ({ state, category }) => {
         <Link to="/" className="logo-anime">
           AniWatch
         </Link>
-        <button className="menu-button" onClick={toggleMenu}>
+        <button className="menu-button">
           {open ? <FaTimes /> : <FaBars />}
         </button>
-        <div className={`category-links ${open ? "active" : ""}`}>
+        <button className="menu-btnn" onClick={toggleMenu}>
+          <img src={navIc} alt="menu-picture" className="nav-menu" />
+        </button>
+        <div className={`category-links  ${open ? "phone-onn" : ""}`}>
           <Link to="/popular" className="nav-link">
             Popular
           </Link>

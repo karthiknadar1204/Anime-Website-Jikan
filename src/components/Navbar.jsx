@@ -1,6 +1,6 @@
 const Navbar = () => {
   return (
-    <div style={{ display: "none" }}>
+    <div>
       <button>Popular</button>
       <button>Airing</button>
       <button>Upcoming</button>
