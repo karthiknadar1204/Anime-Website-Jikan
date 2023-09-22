@@ -279,10 +279,15 @@ h1 {
     right: 10%;
   }
 
+  .nav-menu:active {
+    opacity: 50%;
+  }
+
   .logo-anime {
     position: absolute;
     top: 7%;
     margin-bottom: 10vh;
+    animation: 5s infinite alternate slidein;
   }
 
   .category {
@@ -300,6 +305,20 @@ h1 {
     display: flex;
     flex-direction: column;
     margin-right: 5vw;
+    animation: fadeInDown; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 0.1s; /* don't forget to set a duration! */
+  }
+
+  .phone-onn:hover {
+  }
+
+  @keyframes slidein {
+    from {
+      transform: translateX(-10%);
+    }
+    to {
+      transform: translateX(20%);
+    }
   }
 
   /* Add styles for the "FaBars" icon button */
