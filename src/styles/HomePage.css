@@ -13,8 +13,8 @@ button {
 }
 .nav-menu {
   display: none;
-  background-color: #fff;
-  height: 3rem;
+  background-color: #000;
+  height: 2rem;
   /* display: none; */
 }
 
@@ -275,7 +275,7 @@ h1 {
   .nav-menu {
     display: inline-block;
     position: absolute;
-    top: 9%;
+    top: 10%;
     right: 10%;
   }
 

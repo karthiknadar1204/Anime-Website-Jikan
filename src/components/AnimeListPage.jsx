@@ -3,7 +3,7 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 import "../styles/HomePage.css";
 import { FaBars, FaTimes } from "react-icons/fa";
-import navIc from "./navigation-bar.png";
+import navIc from "./nav-white-img-bg.png";
 
 const AnimeListPage = ({ state, category }) => {
   const [popular, setPopular] = useState([]);
